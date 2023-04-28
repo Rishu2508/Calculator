@@ -23,6 +23,7 @@ body {
     font-family: 'Roboto', sans-serif;
     transition: 0.3s ease;
     color: var(--clr);
+    user-select: none;
 }
 
 body.dark {
@@ -130,6 +131,7 @@ body.dark {
         -2px -2px 2px 1px #0003 inset;
     transition: 0.1s ease;
     outline: none;
+    pointer-events: none;
 }
 
 .keys .key:active {
