@@ -37,7 +37,6 @@ body.dark {
 
 .container {
     width: 100%;
-    /* height: max-content; */
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -153,11 +152,11 @@ body.dark {
 .key.op {
     color: #fff;
     font-weight: 100;
-    background: linear-gradient(to bottom right, rgb(255, 63, 5), rgb(235, 129, 9));
+    background: linear-gradient(to bottom right, rgb(255, 85, 33), rgb(235, 129, 9));
 }
 
 .key.op:active {
-    background: linear-gradient(to bottom right, rgb(216, 53, 3), rgb(204, 111, 6));
+    background: linear-gradient(to bottom right, rgb(199, 47, 1), rgb(204, 111, 6));
 }
 
 .key.extras {

@@ -59,7 +59,6 @@ operation.forEach(function (key) {
             Output2.value = '';
         } else if (Output1.value.slice(-1) === '.') {
             Output1.value += '0' + e.target.innerText;
-            // Output2.value = '';
         } else {
             Output1.value += '' + e.target.innerText;
             Output2.value = '';
@@ -91,7 +90,6 @@ percent.addEventListener('click', () => {
         Output1.value = Output1.value / 100;
         Output2.value = Output2.value / 100;
     } else if (answer) {
-        alert('second case');
         Output1.value = Output2.value / 100;
         Output2.value = Output2.value / 100;
     } else {
