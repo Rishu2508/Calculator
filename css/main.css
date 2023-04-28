@@ -21,7 +21,7 @@ body {
     align-items: center;
     background: var(--bg);
     font-family: 'Roboto', sans-serif;
-    transition: 200ms ease;
+    /* transition: 200ms ease; */
     color: var(--clr);
     user-select: none;
 }
@@ -67,7 +67,7 @@ body.dark {
     padding: 1rem;
     border-radius: 1.5rem;
     box-shadow: 0 0 20px 0px #0003;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 
 .calc-body::after {
@@ -129,7 +129,7 @@ body.dark {
         2px 2px 2px 1px #fff5 inset,
         2px 2px 16px 0px #0002 inset,
         -2px -2px 2px 1px #0003 inset;
-    transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    /* transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease; */
     outline: none;
 }
 
@@ -178,7 +178,7 @@ body.dark {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease;
+    transition: 200ms ease;
 }
 
 .theme-toggle:hover {
@@ -191,7 +191,7 @@ body.dark {
     font-size: 1.2rem;
     position: absolute;
     opacity: 0;
-    transition: 0.8s ease;
+    transition: 200ms ease;
 }
 
 .theme-toggle i.active {
