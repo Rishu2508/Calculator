@@ -36,6 +36,19 @@ body.dark {
     --xtra-btn-bg: #596477;
 }
 
+button, button:focus, button:active{
+    background: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    appearance: none;
+    font-kerning: unset;
+    font-feature-settings: unset;
+    font-optical-sizing: inherit;
+    font-weight: 100;
+    font-family: inherit;
+}
+
 .container {
     width: 100%;
     position: relative;
