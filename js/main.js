@@ -53,7 +53,7 @@ backspace.addEventListener('click', function () {
 operation.forEach(function (key) {
     key.addEventListener('click', (e) => {
         if (my_operations.includes(Output1.value.slice(-1))) {
-
+            Output1.value = Output1.value.slice(0, -1) + e.target.innerText;
         } else if (answer) {
             Output1.value = Output2.value + e.target.innerText;
             Output2.value = '';
