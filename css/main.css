@@ -129,6 +129,7 @@ body.dark {
         2px 2px 16px 0px #0002 inset,
         -2px -2px 2px 1px #0003 inset;
     transition: 0.1s ease;
+    outline: none;
 }
 
 .keys .key:active {
