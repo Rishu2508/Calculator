@@ -28,10 +28,10 @@ numbers.forEach(function (key) {
             if (!hasDot && Output1.value.slice(-1) != '.' && !my_operations.includes(Output1.value.slice(-1))) {
                 Output1.value += btn;
                 Output2.value += btn;
-                hasDot = true;
             } else if (my_operations.includes(Output1.value.slice(-1))){
                 Output1.value += '0' + btn;
             }
+            hasDot = true;
         } else if (Output1.value != '0' || Output2.value != '0') {
             Output1.value += btn;
             Output2.value += btn;
