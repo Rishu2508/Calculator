@@ -5,7 +5,7 @@ var toggle = document.getElementById('toggler'),
     percent = document.getElementById('percent'),
     operation = document.querySelectorAll('.key.op:not(.equals)'),
     numbers = document.querySelectorAll('.key:not(.op,.extras)'),
-    answer = false;
+    answer = false, hasDot = false;
 
 const Output1 = document.querySelector('.output-1'),
     Output2 = document.querySelector('.output-2'),
@@ -25,12 +25,13 @@ numbers.forEach(function (key) {
     key.addEventListener('click', function (e) {
         btn = e.target.innerText;
         if (btn === '.') {
-            if (Output1.value.slice(-1) != '.' && !my_operations.includes(Output1.value.slice(-1))) {
+            if (!hasDot && Output1.value.slice(-1) != '.' && !my_operations.includes(Output1.value.slice(-1))) {
                 Output1.value += btn;
                 Output2.value += btn;
-            } else {
+            } else if (my_operations.includes(Output1.value.slice(-1))){
                 Output1.value += '0' + btn;
             }
+            hasDot = true;
         } else if (Output1.value != '0' || Output2.value != '0') {
             Output1.value += btn;
             Output2.value += btn;
@@ -63,6 +64,7 @@ operation.forEach(function (key) {
             Output1.value += '' + e.target.innerText;
             Output2.value = '';
         }
+        hasDot = false;
     })
 })
 
